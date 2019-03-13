@@ -1,0 +1,11 @@
+@import 'bootstrap';
+
+body {
+  padding: 20px;
+}
+
+.flash-message {
+  &.error {
+    color: red;
+  }
+}

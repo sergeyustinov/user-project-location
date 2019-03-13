@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title UserProjectLocation
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    - flash.each do |key, message|
+      .flash-message{class: key}= message
+    = link_to 'UserProjectLocation Project Logo', root_path
+    %hr
+    = yield
+

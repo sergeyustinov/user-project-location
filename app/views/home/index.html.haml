@@ -1,0 +1,6 @@
+%h1 Hi, #{current_user.email}
+
+%ul
+  %li= link_to 'Invite friend', new_user_invitation_path
+  %li= link_to 'Your projects', projects_path
+  %li= link_to 'Your locations', locations_path
